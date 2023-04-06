@@ -1,0 +1,200 @@
+@import url("../Restaurant-App/CSS/flex.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box !important;
+}
+
+html {
+  font-size: 16px;
+  background-color: whitesmoke;
+}
+
+main {
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 98%;
+  height: 100vh;
+  margin: 20px auto;
+  padding: 0.3125rem 0.625rem;
+  position: relative;
+}
+
+main > :first-child,
+main > :nth-child(2) {
+  min-width: 320px;
+  padding: 0.625rem 0.3125rem;
+}
+
+main > :first-child {
+  width: 35%;
+  flex-grow: 1;
+  border-right: 1px solid black;
+}
+
+main > :nth-child(2) {
+  width: 65%;
+  flex-grow: 1;
+  border-left: 1px solid black;
+}
+
+.menuAll {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+:is(input[name="tableNumber"], input[name="menuSearch"]) {
+  margin: 1rem 0;
+  padding-left: 0.7rem;
+  width: 80%;
+  height: 2.5rem;
+  align-self: center;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
+  letter-spacing: 0.07rem;
+  text-overflow: ellipsis;
+}
+
+input[name="menuSearch"] {
+  width: 52%;
+  align-self: flex-start;
+  margin-left: 1.2rem;
+}
+
+.table-card,
+.menuItem-details {
+  justify-content: space-around;
+  align-self: center;
+  width: 90%;
+  height: 100px;
+  padding: 0.625rem 0.3125rem;
+  margin: 0.5rem 0.25rem;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.3);
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.table-card {
+  width: 94%;
+}
+
+.active-table {
+  background-color: rgb(231, 190, 27);
+}
+
+.table-card > p,
+div,
+.menuItem-details p {
+  padding-left: 1rem;
+}
+
+.table-card div,
+.menuItem-details p {
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.menuItem-details {
+  width: 93%;
+  height: 85px;
+  margin: 0.7rem 0.2rem;
+}
+
+/* Set the width and color of the scrollbar track */
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* popUp specific table */
+.popUp {
+  position: fixed;
+  top: 10%;
+  width: 80%;
+  min-width: 310px;
+  max-width: 450px;
+  background-color: white !important;
+  border-radius: 5px;
+  padding: 0;
+  margin: 0;
+  visibility: hidden;
+  transform: scale(0.1);
+  transition: all 300ms ease-in, box-shadow 1ms ease-in;
+  z-index: 1;
+}
+
+.popUp > table {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.active {
+  visibility: visible;
+  transform: scale(1);
+}
+
+.background-div {
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  /* z-index: 0; */
+}
+
+table caption {
+  padding: 8px 5px;
+  width: 100%;
+  font-weight: bold;
+  font-size: max(1.5vw, 1rem);
+  background-color: rgb(55, 55, 187);
+  color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.close-icon {
+  padding-left: min(30vw, 40%);
+}
+.close-icon > i,
+.fa-trash {
+  cursor: pointer;
+}
+
+.popUp tfoot td {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: blue;
+  border-radius: 5px;
+}
+
+input[name="itemQuantity"] {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+  height: 1.5rem;
+  padding-right: 0.2rem;
+  width: 100%;
+}
+
+.popUp table button[type="button"] {
+  padding: 10px 5px;
+  border-radius: 5px;
+  background-color: blue;
+  color: aliceblue;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+}

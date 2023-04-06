@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./index.css" />
+
+    <title>Restaurant-App</title>
+  </head>
+  <body>
+    <main class="restaurant-app flex-row">
+      <section class="menu-table flex-column">
+        <h2 class="align-self-center">Tables</h2>
+        <input
+          type="text"
+          name="tableNumber"
+          id="tableNum"
+          placeholder="Search table"
+        />
+        <div class="sittingTable"></div>
+      </section>
+      <section class="menu-order flex-column">
+        <h2 class="align-self-center">Menu</h2>
+        <input
+          type="text"
+          name="menuSearch"
+          id="menuItems"
+          placeholder="Search menu.....  by course, by food"
+        />
+        <div class="menuAll"></div>
+      </section>
+      <section class="popUp"></section>
+    </main>
+    <div class="" id="background-div"></div>
+
+    <script src="./index.js"></script>
+    <script src="./JavaScript/tableSittingSearch.js"></script>
+    <script src="./JavaScript/menuItemSearch.js"></script>
+    <script src="./JavaScript/updateTable.js"></script>
+    <script src="./JavaScript/popUpBill.js"></script>
+  </body>
+</html>

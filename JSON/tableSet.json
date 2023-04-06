@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "tableName": "Table-1",
+    "totalAmount": 0,
+    "totalItems": 0
+  },
+  {
+    "id": 2,
+    "tableName": "Table-2",
+    "totalAmount": 0,
+    "totalItems": 0
+  },
+  {
+    "id": 3,
+    "tableName": "Table-3",
+    "totalAmount": 0,
+    "totalItems": 0
+  }
+]

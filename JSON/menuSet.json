@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "itemName": "Crusty garlic focaccia with melted cheese",
+    "itemPrice": 105.0
+  },
+  {
+    "id": 2,
+    "itemName": "french fries",
+    "itemPrice": 100.0
+  },
+  {
+    "id": 3,
+    "itemName": "home country fries with herbs & chilli flakes",
+    "itemPrice": 200.0
+  },
+  {
+    "id": 4,
+    "itemName": "french fries with cheese & jalapeons",
+    "itemPrice": 220.0
+  },
+  {
+    "id": 5,
+    "itemName": "Crusty garlic focaccia with melted cheese",
+    "itemPrice": 105.0
+  },
+  {
+    "id": 6,
+    "itemName": "french fries",
+    "itemPrice": 100.0
+  },
+  {
+    "id": 7,
+    "itemName": "home country fries with herbs & chilli flakes",
+    "itemPrice": 200.0
+  },
+  {
+    "id": 8,
+    "itemName": "french fries with cheese & jalapeons",
+    "itemPrice": 220.0
+  }
+]
