@@ -81,6 +81,7 @@ input[name="menuSearch"] {
 
 .table-card {
   width: 94%;
+  cursor: pointer;
 }
 
 .active-table {
