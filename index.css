@@ -28,13 +28,13 @@ main > :nth-child(2) {
 main > :first-child {
   width: 35%;
   flex-grow: 1;
-  border-right: 1px solid black;
+  /* border-right: 1px solid black; */
 }
 
 main > :nth-child(2) {
   width: 65%;
   flex-grow: 1;
-  border-left: 1px solid black;
+  /* border-left: 1px solid black; */
 }
 
 .menuAll {
@@ -187,13 +187,25 @@ input[name="itemQuantity"] {
 .popUp table button[type="button"] {
   padding: 10px 5px;
   border-radius: 5px;
-  background-color: blue;
-  color: aliceblue;
+  background-color:rgba(0, 0, 0, 0.5);
+  color: rgba(256, 256, 256, 0.8);
   width: 100%;
   height: 100%;
   border: none;
   outline: none;
-  cursor: pointer;
+  /* cursor: pointer; */
   font-weight: bold;
   font-size: 1rem;
+}
+
+@media only screen and (min-width:968px) {
+
+  main > :first-child {
+    border-right: 1px solid black;
+  }
+
+  main > :nth-child(2) {
+    border-left: 1px solid black;
+  }
+
 }
